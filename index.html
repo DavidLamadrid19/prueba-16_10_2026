@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas productos</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header><h1>Tienda de Aseo Personal</h1></header>
+    <main>
+      <div class="Products">
+        <!--la clase de div debe ser las mismas en todos los contenedores, ya que si es diferente puede generar un error -->
+        <div class="Product">
+            <img src="./nivea men.jfif" alt="Producto1">
+            <h2>Nivea Aerosol</h2>
+            <p>Precio: 35000</p>
+            <button onclick="addToCart('Producto1', 35000)">Comprar</button>
+        </div>
+        
+        <!--Contenedor div que va a contener las imagenes de mis productos-->
+
+        <div class="Product">
+            <img src="./axe aerosol.jfif " alt="Producto2">
+            <h2>Axe aerosol</h2>
+            <p>Precio: 40000</p>
+            <button onclick="addToCart('Producto2', 40000)">Comprar</button>
+        </div>
+
+        <div class="Product">
+            <img src="oldspice.jfif"  alt="Producto3">
+            <h2>oldspice aerosol</h2>
+            <p>Precio: 52000</p>
+            <button onclick="addToCart('Producto3', 52000)">Comprar</button>
+        </div>
+   
+
+        <div class="Product">
+            <img src="./gel ego.jfif" alt="Producto4">
+            <h2>Ego desodorante</h2>
+            <p>Precio: 25000</p>
+            <button onclick="addToCart('Producto4', 25000)">Comprar</button>
+
+        </div>
+        </div>
+    </main>
+    
+    <script>
+        function addToCart(nombre, precio) {
+            alert("Producto: " + nombre + " - Precio: " + precio);
+        }
+    </script>
+  
+    <footer><a href="cart.html">Ir al carrito </a></footer>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

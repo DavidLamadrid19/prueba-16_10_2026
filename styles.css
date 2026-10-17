@@ -1,0 +1,89 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(130, 130, 143);
+    color:rgb(192, 192, 192);
+
+
+
+}
+header{
+    background-color:crimson;
+    color: white;
+    text-align: center;
+    padding:20px;
+
+
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(24, 37, 44);
+    color: white;
+}
+main{
+    margin: 20px;
+
+}
+.Products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+    justify-items: center;
+}
+.Product{
+    background-color:crimson;
+    border: 1px solid whitesmoke ;
+    border-radius: 8px ;
+    box-shadow:0 2px 5px rgba(0, 0, 0,0.1) ;
+    padding: 20px;
+    text-align: center;
+    width: 90% ;
+    max-width:300px ;
+
+}
+.Product img{
+    width: 100px ;
+    border-radius: 8px ;
+    margin-bottom: 10px;
+    height: 50%;
+}
+.Product h2{
+    font-size: 1.5em;
+    margin: 10px 0;
+
+}
+.Product p{
+    font-size: 1.2em;
+    margin:10px 0;
+    color:#555;
+
+}
+button{
+    padding: 20px 25px;
+    background-color: #3a1561 ;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em ;
+
+}
+button:hover{
+    background-color: rgb(20, 67, 220);
+
+}
+#cart p{
+    margin: 10px 0;
+    font-size: 1.2em;
+    
+}
+.Product img{
+    transition: transform 0.3s ease-in-out;
+
+}
+.Product:hover img{
+    transform: scale(1.1)
+}
